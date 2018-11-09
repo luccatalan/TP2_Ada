@@ -1,0 +1,118 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U pressuresensor%b	pressuresensor.adb	e7c8b913 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+
+U pressuresensor%s	pressuresensor.ads	d03ddd7d EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W measuredevice%s	measuredevice.adb	measuredevice.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-contai.ads		20180525052259 61e5e089 ada.containers%s
+D a-conhel.ads		20180525052300 20298884 ada.containers.helpers%s
+D a-convec.ads		20180525052302 7e2b0fdf ada.containers.vectors%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-iteint.ads		20180525052300 7c7305e9 ada.iterator_interfaces%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nuflra.ads		20180525052300 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D measuredevice.ads	20181109151830 e04e7f7f measuredevice%s
+D measuredeviceobserver.ads  20181109151924 7b9df894 measuredeviceobserver%s
+D pressuresensor.ads	20181109151640 3073a202 pressuresensor%s
+D pressuresensor.adb	20181109142551 97edb06b pressuresensor%b
+D system.ads		20180525052301 4635ec04 system%s
+D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-finmas.ads		20180525052301 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-memory.ads		20180525052301 597d6634 system.memory%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-pooglo.ads		20180525052259 ede33ef8 system.pool_global%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stalib.adb		20180525052259 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20180525052301 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20180525052300 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180525052259 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180525052259 aedef97e system.stream_attributes%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r37
+X 7 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[4|111]>
+X 8 a-numeri.ads
+16K13*Numerics 32e17 17|1r10 1r41
+X 9 a-nuflra.ads
+41K22*Float_Random 74e30 17|1w19 1r50
+47R9*Generator<26|63R9> 17|6r8
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<26|71p13> 17|11s24 12s10
+53U14*Reset<26|100p14> 17|10s7
+X 14 measuredevice.ads
+6K9*MeasureDevice 30e18 16|1w6 1r25
+8H9*T_MeasureDevice 28e14 16|5r33
+12V13*getPressure{float}
+13V13*getStatus{boolean}
+14U14*setPressure 17|11s12
+15U14*setStatus 17|13s15 15s15
+16V13*getId{natural}
+17U14*setId
+18U14*notify 17|17s12
+19U14*registerObserver
+X 16 pressuresensor.ads
+3K9*PressureSensor 9l5 9e19 17|3b14 20l5 20t19
+5R9*T_PressureSensor<14|8R9> 14|12p13 13p13 14p14 15p14 16p13 17p14 18p14
+. 19p14 16|5e65 7P14 7r44 17|5r44
+7U14*simulateMeasure<14|11p14> 7=30 17|5b14 18l8 18t23
+7r30 This{5R9} 17|5b30 11m7 11r7 13m10 13r10 15m10 15r10 17r7
+X 17 pressuresensor.adb
+6r4 G{9|47R9} 10r13 11r31 12r17
+7f4 p0{float} 9m7 11r42
+X 18 system.ads
+67M9*Address
+X 23 s-memory.ads
+53V13*Alloc{18|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{18|67M9} 105i<c,__gnat_realloc>22
+X 31 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

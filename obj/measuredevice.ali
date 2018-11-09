@@ -1,0 +1,144 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U measuredevice%b	measuredevice.adb	0e21484c OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+U measuredevice%s	measuredevice.ads	cc35db8e EE OO PF PK IL
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.vectors%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W measuredeviceobserver%s  measuredeviceobserver.ads  measuredeviceobserver.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-contai.ads		20180525052259 61e5e089 ada.containers%s
+D a-cgarso.ads		20180525052259 9129bfa8 ada.containers.generic_array_sort%s
+D a-conhel.ads		20180525052300 20298884 ada.containers.helpers%s
+D a-conhel.adb		20180525052301 9cc5095b ada.containers.helpers%b
+D a-convec.ads		20180525052302 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20180525052259 32f4e1a7 ada.containers.vectors%b
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-iteint.ads		20180525052300 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20180525052301 eff36322 ada.unchecked_deallocation%s
+D measuredevice.ads	20181109142712 db4afb6f measuredevice%s
+D measuredevice.adb	20181109142801 d56bb323 measuredevice%b
+D measuredeviceobserver.ads  20181106102127 69542f3e measuredeviceobserver%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20180525052301 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-finmas.ads		20180525052301 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-memory.ads		20180525052301 597d6634 system.memory%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-pooglo.ads		20180525052259 ede33ef8 system.pool_global%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stalib.adb		20180525052259 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20180525052301 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20180525052300 b16154c2 system.storage_pools%s
+D s-stposu.ads		20180525052259 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20180525052259 aedef97e system.stream_attributes%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 2r5
+X 2 a-contai.ads
+16K13*Containers 24e19 15|1r10 2r9
+20I9*Count_Type<integer>
+X 6 a-convec.ads
+73k24*Vectors 824e27 15|1w21 9r33
+88R9*Vector<9|43R9> 15|26r33[9]
+165V13*Length{2|20I9} 16|42s40[15|9]
+196V13*Element{17|4P9} 16|43s25[15|9]
+431U14*Append 16|36s22[15|9]
+X 10 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[6|111]>
+X 15 measuredevice.ads
+6K9*MeasureDevice 23E9 30l5 30e18 16|2b14 48l5 48t18
+8H9*T_MeasureDevice 11p14 11r44 12p13 12r39 13p13 13r37 14p14 14r40 15p14
+. 15r38 16p13 16r33 17p14 17r34 18p14 18r35 19p14 19r45 23c9 28e14 16|4r39
+. 9r37 14r33 19r40 24r38 29r34 34r45 39r35
+9K12*DevicesVector[6|73] 26r19
+11x14*simulateMeasure 11=30
+11r30 This{8R9}
+12V13*getPressure{float} 12=25 16|4b13 7t7
+12r25 This{8R9} 16|4b25 6r14
+13V13*getStatus{boolean} 13=23 16|9b13 12t7
+13r23 This{8R9} 16|9b23 11r14
+14U14*setPressure 14=26 14>57 16|19b14 22t7
+14r26 This{8R9} 16|19b26 21m7
+14f57 Pressure{float} 16|19b57 21r24
+15U14*setStatus 15=24 15>55 16|24b14 27t7
+15r24 This{8R9} 16|24b24 26m7
+15b55 Status{boolean} 16|24b55 26r22
+16V13*getId{natural} 16=19 16|14b13 17t7
+16r19 This{8R9} 16|14b19 16r14
+17U14*setId 17=20 17>51 16|29b14 32t7
+17r20 This{8R9} 16|29b20 31m7
+17i51 id{natural} 16|29b51 31r18
+18U14*notify 18=21 16|39b14 46t7
+18r21 This{8R9} 16|39b21 42r25 43r10
+19U14*registerObserver 19=31 19>62 16|34b14 37t7
+19r31 This{8R9} 16|34b31 36m7 36r7
+19p62 Observer{17|4P9} 16|34b62 36r29
+24f7*pression{float} 16|6r19 21m12
+25b7*status{boolean} 16|11r19 26m12
+26r7*observers{6|88R9[9]} 16|36m12 42r30 43r15
+27i7*id{natural} 16|16r19 31m12
+X 16 measuredevice.adb
+40i7 i{integer} 42r13 43r33 44m10 44r15
+X 17 measuredeviceobserver.ads
+1K9*MeasureDeviceObserver 15|3w6 4r5 17|8e26
+3h9*T_MeasureDeviceObserver
+4P9*T_MeasureDeviceObserverClassAccess(3R9) 15|9r50 19r76 16|34r76
+6U14*update 16|43R36
+X 18 system.ads
+67M9*Address
+X 24 s-memory.ads
+53V13*Alloc{18|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{18|67M9} 105i<c,__gnat_realloc>22
+X 31 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

@@ -1,0 +1,68 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U measuredeviceobserver%s  measuredeviceobserver.ads  9bd387eb EE OO PF PK IL
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Y measuredevice%s	measuredevice.adb	measuredevice.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D measuredevice.ads	20181109151830 e04e7f7f measuredevice%s
+D measuredeviceobserver.ads  20181109151924 7b9df894 measuredeviceobserver%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-finmas.ads		20180525052301 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180525052301 4ff27390 system.finalization_root%s
+D s-memory.ads		20180525052301 597d6634 system.memory%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-pooglo.ads		20180525052259 ede33ef8 system.pool_global%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stalib.adb		20180525052259 f2fe2716 system.standard_library%b
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20180525052301 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20180525052300 b16154c2 system.storage_pools%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+X 7 measuredevice.ads
+6K9 MeasureDevice 8|8r37
+X 8 measuredeviceobserver.ads
+3K9*MeasureDeviceObserver 10l5 10e26
+5h9*T_MeasureDeviceObserver 6r58
+6P9*T_MeasureDeviceObserverClassAccess(5R9)
+8U14*update 8^21
+8p21 sensor
+X 9 system.ads
+67M9*Address
+X 13 s-memory.ads
+53V13*Alloc{9|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{9|67M9} 105i<c,__gnat_realloc>22
+X 20 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+
