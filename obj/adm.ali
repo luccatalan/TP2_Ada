@@ -20,8 +20,10 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U adm%b			adm.adb			7e67a5ef OO PK IU
+U adm%b			adm.adb			3c80ddce OO PK IU
 W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
@@ -62,13 +64,16 @@ D a-except.ads		20180525052301 291912d5 ada.exceptions%s
 D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
 D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
 D a-iteint.ads		20180525052300 7c7305e9 ada.iterator_interfaces%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20180525052300 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20180525052301 55716239 ada.numerics.generic_elementary_functions%s
 D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-tags.ads		20180525052302 491b781d ada.tags%s
 D a-textio.ads		20180525052302 881db35a ada.text_io%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20180525052301 eff36322 ada.unchecked_deallocation%s
 D adm.ads		20181110103951 4572945f adm%s
-D adm.adb		20181110105818 b30882ea adm%b
+D adm.adb		20181110143002 f207c7d7 adm%b
 D interfac.ads		20180525052300 5ab55268 interfaces%s
 D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
 D measuredevice.ads	20181110103336 4d3f4c2e measuredevice%s
@@ -99,52 +104,69 @@ D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 20e8 18|3r6 3r34 19|1r6 1r23
+16K9*Ada 20e8 21|3r6 3r34 22|1r6 1r23 2r6 3r5
 X 2 a-contai.ads
-16K13*Containers 24e19 18|3r10 3r38
+16K13*Containers 24e19 21|3r10 3r38
+20I9*Count_Type<integer>
 X 7 a-convec.ads
-73k24*Vectors 824e27 18|3w21 10r32
+73k24*Vectors 824e27 21|3w21 10r32
 78I12*Extended_Index{integer}
-88R9*Vector<10|43R9> 18|20r37[10]
-207U14*Replace_Element 19|16s30[18|10]
-431U14*Append 19|14s30[18|10]
-522V13*Last_Index{78I12[18|10]} 19|13s30[18|10]
+88R9*Vector<10|43R9> 21|20r37[10]
+165V13*Length{2|20I9} 22|35s45[21|10] 42s74[21|10]
+196V13*Element{float} 22|36s33[21|10] 37s74[21|10]
+207U14*Replace_Element 22|18s30[21|10]
+431U14*Append 22|16s30[21|10]
+522V13*Last_Index{78I12[21|10]} 22|15s30[21|10]
 X 12 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[6|75]>
-X 15 a-textio.ads
-49K13*Text_IO 471e16 19|1w10 1r27
-X 18 adm.ads
-5K9*ADM 16E9 23l5 23e8 19|3b14 25l5 25t8
-7R9*T_ADM<23|5R9> 8r35 12p14 12r44 13P14 13r35 16c9 21e14 19|5r35 20r44
+X 13 a-numeri.ads
+16K13*Numerics 32e17 22|2r10 3r9
+X 14 a-nuelfu.ads
+18K22*Elementary_Functions[15|39] 22|2w19 3r18
+X 15 a-ngelfu.ads
+75V13*Log{float} 22|44s35[14|18]
+X 18 a-textio.ads
+49K13*Text_IO 471e16 22|1w10 1r27
+X 21 adm.ads
+5K9*ADM 16E9 23l5 23e8 22|5b14 47l5 47t8
+7R9*T_ADM<26|5R9> 8r35 12p14 12r44 13P14 13r35 16c9 21e14 22|7r35 23r44
 8P9*T_ADMAccess(7R9)
 10K12*Float_Vector[7|73] 20r24
-12U14*computeAltitude 12=30 19|20b14 23t7
-12r30 This{7R9} 19|20b30
-13U14*update<23|8p14> 13^21 13^42 19|5b14 18t7
-13p21 This(7R9) 19|5b21 13r10 14r10 16r10
-13p42 sensor(22|6R9) 19|5b42 8r10 8r31 9r15 13r43 16r46
-17b7 status{boolean}
+12U14*computeAltitude 12=30 22|20s12 23b14 45t7
+12r30 This{7R9} 22|23b30 33m7 34m7 35r25 36r13 37m13 37r34 37r54 38m13 42m7
+. 42r28 42r54 44r44
+13U14*update<26|8p14> 13^21 13^42 22|7b14 21t7
+13p21 This(7R9) 22|7b21 15r10 16r10 18r10 20r7
+13p42 sensor(25|6R9) 22|7b42 10r10 10r31 11r15 15r43 18r46
+17b7 status{boolean} 22|34m12 38m18
 18f7 altitude{float}
-19f7 pressureMean{float}
-20r7 listOfPressure{7|88R9[10]} 19|13r15 14m15 16m15
-X 19 adm.adb
-6f7 p{float} 9m10 11m10 14r37 16r64
-X 22 measuredevice.ads
-4K9*MeasureDevice 18|2w6 2r25 13r58 22|27e18
-6H9*T_MeasureDevice 18|13r72 19|5r58 22|25e14
-9V13*getPressure{float} 19|8s38 9s22
-10V13*getStatus{boolean} 19|8s17
-13V13*getId{natural} 19|13s50 16s53
-X 23 measuredeviceobserver.ads
-3K9*MeasureDeviceObserver 18|1w6 1r33 23|10e26
-5h9*T_MeasureDeviceObserver 18|7r22 16r22
-X 25 system.ads
+19f7 pressureMean{float} 22|33m12 37m18 37r39 42m12 42r33 44r49
+20r7 listOfPressure{7|88R9[10]} 22|15r15 16m15 18m15 35r30 36r18 37r59 42r59
+X 22 adm.adb
+8f7 p{float} 11m10 13m10 16r37 18r64
+24i7 i{integer} 35r13 36r41 37r82 40m10 40r15
+25f7 g{float} 44r29
+26f7 p0{float} 44r39
+27f7 R{float} 44r14
+28f7 M{float} 44r25
+29f7 T0{float} 44r18
+30f7 h{float} 44m7
+X 25 measuredevice.ads
+4K9*MeasureDevice 21|2w6 2r25 13r58 25|27e18
+6H9*T_MeasureDevice 21|13r72 22|7r58 25|25e14
+9V13*getPressure{float} 22|10s38 11s22
+10V13*getStatus{boolean} 22|10s17
+13V13*getId{natural} 22|15s50 18s53
+X 26 measuredeviceobserver.ads
+3K9*MeasureDeviceObserver 21|1w6 1r33 26|10e26
+5h9*T_MeasureDeviceObserver 21|7r22 16r22
+X 28 system.ads
 67M9*Address
-X 33 s-memory.ads
-53V13*Alloc{25|67M9} 103i<c,__gnat_malloc>22
+X 36 s-memory.ads
+53V13*Alloc{28|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{25|67M9} 105i<c,__gnat_realloc>22
-X 40 s-stalib.adb
+76V13*Realloc{28|67M9} 105i<c,__gnat_realloc>22
+X 43 s-stalib.adb
 93U14 Break_Start 94i<c,__gnat_break_start>22
 
