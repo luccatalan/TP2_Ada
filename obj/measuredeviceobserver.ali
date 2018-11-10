@@ -14,7 +14,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U measuredeviceobserver%s  measuredeviceobserver.ads  35b4554b EE OO PF PK IL
+U measuredeviceobserver%s  measuredeviceobserver.ads  3baa4d21 EE OO PF PK IL
 Z ada.streams%s		a-stream.adb		a-stream.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 Y measuredevice%s	measuredevice.adb	measuredevice.ali
@@ -31,8 +31,8 @@ D a-finali.ads		20180525052301 bf4f806b ada.finalization%s
 D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-tags.ads		20180525052302 491b781d ada.tags%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
-D measuredevice.ads	20181110095748 4d3f4c2e measuredevice%s
-D measuredeviceobserver.ads  20181110095758 788b1965 measuredeviceobserver%s
+D measuredevice.ads	20181110103336 4d3f4c2e measuredevice%s
+D measuredeviceobserver.ads  20181110100936 7695010f measuredeviceobserver%s
 D system.ads		20180525052301 4635ec04 system%s
 D s-exctab.ads		20180525052301 54135002 system.exception_table%s
 D s-finmas.ads		20180525052301 7811a767 system.finalization_masters%s
@@ -55,8 +55,8 @@ X 8 measuredeviceobserver.ads
 3K9*MeasureDeviceObserver 10l5 10e26
 5h9*T_MeasureDeviceObserver 6r58 8p14 8r35
 6P9*T_MeasureDeviceObserverClassAccess(5R9)
-8U14*update 8=21 8^60
-8r21 This{5R9}
+8x14*update 8^21 8^60
+8p21 This(5R9)
 8p60 sensor
 X 9 system.ads
 67M9*Address

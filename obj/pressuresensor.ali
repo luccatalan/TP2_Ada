@@ -49,8 +49,8 @@ D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-tags.ads		20180525052302 491b781d ada.tags%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180525052300 5ab55268 interfaces%s
-D measuredevice.ads	20181110095748 4d3f4c2e measuredevice%s
-D measuredeviceobserver.ads  20181110095758 788b1965 measuredeviceobserver%s
+D measuredevice.ads	20181110103336 4d3f4c2e measuredevice%s
+D measuredeviceobserver.ads  20181110100936 7695010f measuredeviceobserver%s
 D measuredevicesvector.ads  20181110095815 31e997ce measuredevicesvector%s
 D pressuresensor.ads	20181109151640 3073a202 pressuresensor%s
 D pressuresensor.adb	20181109142551 97edb06b pressuresensor%b
