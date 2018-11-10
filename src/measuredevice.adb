@@ -1,4 +1,3 @@
-
 package body MeasureDevice is
 
    function getPressure(This : in out T_MeasureDevice) return Float is
@@ -31,7 +30,7 @@ package body MeasureDevice is
       This.id := id;
    end;
    
-   procedure registerObserver(This : in out T_MeasureDevice; Observer : in T_MeasureDeviceObserverClassAccess) is
+   procedure registerObserver(This : in out T_MeasureDevice; Observer : in MeasureDeviceObserver.T_MeasureDeviceObserverClassAccess) is
    begin
       This.observers.Append(Observer);
    end;

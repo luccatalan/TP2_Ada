@@ -1,1 +1,1 @@
-measuredevice.adb:43:35: no selector "update" for type "T_MeasureDeviceObserver'class" defined at measuredeviceobserver.ads:5
+measuredevice.adb:33:97: invalid use of untagged incomplete type "T_MeasureDeviceObserverClassAccess"

@@ -1,12 +1,9 @@
-with Ada.Containers.Vectors;
-use Ada.Containers;
-
 limited with MeasureDeviceObserver;
+with MeasureDevicesVector;
 
 package MeasureDevice is
 
    type T_MeasureDevice is abstract tagged private;
-   package DevicesVector is new Vectors(Natural, MeasureDeviceObserver.T_MeasureDeviceObserverAccess);
    
    procedure simulateMeasure(This : in out T_MeasureDevice) is abstract;
    function getPressure(This : in out T_MeasureDevice) return Float;
@@ -23,8 +20,8 @@ private
    type T_MeasureDevice is abstract tagged record
       pression : Float;
       status : Boolean;
-      observers : DevicesVector.Vector; 
+      observers : MeasureDevicesVector.DevicesVector.Vector; 
       id : Natural;
    end record;
-   
+  
 end MeasureDevice;

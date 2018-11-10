@@ -1,12 +1,13 @@
 with MeasureDeviceObserver; use MeasureDeviceObserver;
-limited with MeasureDevice;
+with MeasureDevice; use MeasureDevice;
 
 package ADM is
 
    type T_ADM is new T_MeasureDeviceObserver with private;
+   type T_ADMAccess is access all T_ADM;
    
    procedure computeAltitude(This : in out T_ADM);
-   procedure update(sensor : access MeasureDevice.T_MeasureDevice);
+   procedure update(This : in out T_ADM; sensor : access T_MeasureDevice);
    
 private
    type T_ADM is new T_MeasureDeviceObserver with record
