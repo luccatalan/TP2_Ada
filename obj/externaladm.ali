@@ -19,12 +19,12 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pressuresensor%b	pressuresensor.adb	e7c8b913 OO PK
+U externaladm%b		externaladm.adb		2effeeec OO PK
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 
-U pressuresensor%s	pressuresensor.ads	527b54a8 EE OO PF PK
+U externaladm%s		externaladm.ads		44b29a5e EE OO PF PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -48,12 +48,12 @@ D a-nuflra.ads		20180525052300 4056ab7a ada.numerics.float_random%s
 D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-tags.ads		20180525052302 491b781d ada.tags%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D externaladm.ads	20181112120220 26ba6cf4 externaladm%s
+D externaladm.adb	20181112120349 48132962 externaladm%b
 D interfac.ads		20180525052300 5ab55268 interfaces%s
 D measuredevice.ads	20181112121252 6208f6aa measuredevice%s
 D measuredeviceobserver.ads  20181112115604 4fba7fb7 measuredeviceobserver%s
 D measuredevicesvector.ads  20181110095815 31e997ce measuredevicesvector%s
-D pressuresensor.ads	20181109151640 3073a202 pressuresensor%s
-D pressuresensor.adb	20181109142551 97edb06b pressuresensor%b
 D system.ads		20180525052301 4635ec04 system%s
 D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s
 D s-exctab.ads		20180525052301 54135002 system.exception_table%s
@@ -76,39 +76,39 @@ D s-stratt.ads		20180525052259 aedef97e system.stream_attributes%s
 D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
 X 1 ada.ads
-16K9*Ada 20e8 18|1r6 1r37
+16K9*Ada 20e8 14|1r6 1r37
 X 7 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[4|75]>
 X 8 a-numeri.ads
-16K13*Numerics 32e17 18|1r10 1r41
+16K13*Numerics 32e17 14|1r10 1r41
 X 9 a-nuflra.ads
-41K22*Float_Random 74e30 18|1w19 1r50
-47R9*Generator<27|63R9> 18|6r8
+41K22*Float_Random 74e30 14|1w19 1r50
+47R9*Generator<27|63R9> 14|6r8
 49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<27|71p13> 18|11s24 12s10
-53U14*Reset<27|100p14> 18|10s7
-X 14 measuredevice.ads
-4K9*MeasureDevice 28e18 17|1w6 1r25
-6H9*T_MeasureDevice 26e14 17|5r33
+51V13*Random{49F12}<27|71p13> 14|11s24 12s10
+53U14*Reset<27|100p14> 14|10s7
+X 13 externaladm.ads
+3K9*ExternalADM 9l5 9e16 14|3b14 19l5 19t16
+5R9*T_ExternalADM<16|6R9> 5e62 7P14 7r44 14|5r44 16|9p14 10p13 11p13 12p14
+. 13p14 14p13 15p14 16p14 17p14
+7U14*simulateMeasure<16|8p14> 7=30 14|5b14 17l8 17t23
+7r30 This{5R9} 14|5b30 11m7 11r7 13m10 13r10 15m10 15r10
+X 14 externaladm.adb
+6r4 G{9|47R9} 10r13 11r31 12r17
+7f4 p0{float} 9m7 11r42
+X 16 measuredevice.ads
+4K9*MeasureDevice 13|1w6 1r25 16|28e18
+6H9*T_MeasureDevice 13|5r30 16|26e14
 9U14*simulateMeasure
 10V13*getPressure{float}
 11V13*getStatus{boolean}
-12U14*setPressure 18|11s12
-13U14*setStatus 18|13s15 15s15
+12U14*setPressure 14|11s12
+13U14*setStatus 14|13s15 15s15
 14V13*getId{natural}
 15U14*setId
-16U14*notify 18|17s12
+16U14*notify
 17U14*registerObserver
-X 17 pressuresensor.ads
-3K9*PressureSensor 9l5 9e19 18|3b14 20l5 20t19
-5R9*T_PressureSensor<14|6R9> 14|9p14 10p13 11p13 12p14 13p14 14p13 15p14
-. 16p14 17p14 17|5e65 7P14 7r44 18|5r44
-7U14*simulateMeasure<14|8p14> 7=30 18|5b14 18l8 18t23
-7r30 This{5R9} 18|5b30 11m7 11r7 13m10 13r10 15m10 15r10 17r7
-X 18 pressuresensor.adb
-6r4 G{9|47R9} 10r13 11r31 12r17
-7f4 p0{float} 9m7 11r42
 X 19 system.ads
 67M9*Address
 X 24 s-memory.ads

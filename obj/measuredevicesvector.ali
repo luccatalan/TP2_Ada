@@ -28,7 +28,7 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U measuredevicesvector%s  measuredevicesvector.ads  7de5d34d EE OO PF PK
+U measuredevicesvector%s  measuredevicesvector.ads  c963e483 EE OO PF PK
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -66,7 +66,7 @@ D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
 D a-tags.ads		20180525052302 491b781d ada.tags%s
 D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20180525052301 eff36322 ada.unchecked_deallocation%s
-D measuredeviceobserver.ads  20181110144407 fb3c4879 measuredeviceobserver%s
+D measuredeviceobserver.ads  20181112115604 4fba7fb7 measuredeviceobserver%s
 D measuredevicesvector.ads  20181110095815 31e997ce measuredevicesvector%s
 D system.ads		20180525052301 4635ec04 system%s
 D s-atocou.ads		20180525052302 b45c2d8d system.atomic_counters%s

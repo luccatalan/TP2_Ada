@@ -21,24 +21,26 @@ package body ada_main is
    E079 : Short_Integer; pragma Import (Ada, E079, "system__object_reader_E");
    E048 : Short_Integer; pragma Import (Ada, E048, "system__dwarf_lines_E");
    E037 : Short_Integer; pragma Import (Ada, E037, "system__traceback__symbolic_E");
-   E131 : Short_Integer; pragma Import (Ada, E131, "ada__numerics_E");
+   E135 : Short_Integer; pragma Import (Ada, E135, "ada__numerics_E");
    E097 : Short_Integer; pragma Import (Ada, E097, "ada__tags_E");
-   E107 : Short_Integer; pragma Import (Ada, E107, "ada__streams_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "system__file_control_block_E");
-   E114 : Short_Integer; pragma Import (Ada, E114, "system__finalization_root_E");
-   E112 : Short_Integer; pragma Import (Ada, E112, "ada__finalization_E");
-   E111 : Short_Integer; pragma Import (Ada, E111, "system__file_io_E");
-   E122 : Short_Integer; pragma Import (Ada, E122, "system__storage_pools_E");
-   E118 : Short_Integer; pragma Import (Ada, E118, "system__finalization_masters_E");
-   E151 : Short_Integer; pragma Import (Ada, E151, "system__storage_pools__subpools_E");
-   E139 : Short_Integer; pragma Import (Ada, E139, "ada__calendar_E");
-   E105 : Short_Integer; pragma Import (Ada, E105, "ada__text_io_E");
-   E124 : Short_Integer; pragma Import (Ada, E124, "system__pool_global_E");
-   E137 : Short_Integer; pragma Import (Ada, E137, "system__random_seed_E");
-   E116 : Short_Integer; pragma Import (Ada, E116, "measuredeviceobserver_E");
-   E103 : Short_Integer; pragma Import (Ada, E103, "adm_E");
-   E145 : Short_Integer; pragma Import (Ada, E145, "measuredevice_E");
-   E130 : Short_Integer; pragma Import (Ada, E130, "pressuresensor_E");
+   E105 : Short_Integer; pragma Import (Ada, E105, "ada__streams_E");
+   E113 : Short_Integer; pragma Import (Ada, E113, "system__file_control_block_E");
+   E112 : Short_Integer; pragma Import (Ada, E112, "system__finalization_root_E");
+   E110 : Short_Integer; pragma Import (Ada, E110, "ada__finalization_E");
+   E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
+   E151 : Short_Integer; pragma Import (Ada, E151, "system__storage_pools_E");
+   E149 : Short_Integer; pragma Import (Ada, E149, "system__finalization_masters_E");
+   E157 : Short_Integer; pragma Import (Ada, E157, "system__storage_pools__subpools_E");
+   E171 : Short_Integer; pragma Import (Ada, E171, "ada__calendar_E");
+   E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "system__pool_global_E");
+   E169 : Short_Integer; pragma Import (Ada, E169, "system__random_seed_E");
+   E147 : Short_Integer; pragma Import (Ada, E147, "measuredeviceobserver_E");
+   E115 : Short_Integer; pragma Import (Ada, E115, "adm_E");
+   E178 : Short_Integer; pragma Import (Ada, E178, "measuredevicesvector_E");
+   E177 : Short_Integer; pragma Import (Ada, E177, "measuredevice_E");
+   E163 : Short_Integer; pragma Import (Ada, E163, "externaladm_E");
+   E180 : Short_Integer; pragma Import (Ada, E180, "pressuresensor_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -49,68 +51,75 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E130 := E130 - 1;
+      E180 := E180 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "pressuresensor__finalize_spec");
       begin
          F1;
       end;
-      E145 := E145 - 1;
+      E163 := E163 - 1;
       declare
          procedure F2;
-         pragma Import (Ada, F2, "measuredevice__finalize_spec");
+         pragma Import (Ada, F2, "externaladm__finalize_spec");
       begin
          F2;
       end;
-      E103 := E103 - 1;
       declare
          procedure F3;
-         pragma Import (Ada, F3, "adm__finalize_spec");
+         pragma Import (Ada, F3, "measuredevicesvector__finalize_spec");
       begin
+         E178 := E178 - 1;
          F3;
       end;
+      E115 := E115 - 1;
       declare
          procedure F4;
-         pragma Import (Ada, F4, "measuredeviceobserver__finalize_spec");
+         pragma Import (Ada, F4, "adm__finalize_spec");
       begin
-         E116 := E116 - 1;
          F4;
       end;
-      E124 := E124 - 1;
       declare
          procedure F5;
-         pragma Import (Ada, F5, "system__pool_global__finalize_spec");
+         pragma Import (Ada, F5, "measuredeviceobserver__finalize_spec");
       begin
+         E147 := E147 - 1;
          F5;
       end;
-      E105 := E105 - 1;
+      E153 := E153 - 1;
       declare
          procedure F6;
-         pragma Import (Ada, F6, "ada__text_io__finalize_spec");
+         pragma Import (Ada, F6, "system__pool_global__finalize_spec");
       begin
          F6;
       end;
-      E151 := E151 - 1;
+      E103 := E103 - 1;
       declare
          procedure F7;
-         pragma Import (Ada, F7, "system__storage_pools__subpools__finalize_spec");
+         pragma Import (Ada, F7, "ada__text_io__finalize_spec");
       begin
          F7;
       end;
-      E118 := E118 - 1;
+      E157 := E157 - 1;
       declare
          procedure F8;
-         pragma Import (Ada, F8, "system__finalization_masters__finalize_spec");
+         pragma Import (Ada, F8, "system__storage_pools__subpools__finalize_spec");
       begin
          F8;
       end;
+      E149 := E149 - 1;
       declare
          procedure F9;
-         pragma Import (Ada, F9, "system__file_io__finalize_body");
+         pragma Import (Ada, F9, "system__finalization_masters__finalize_spec");
       begin
-         E111 := E111 - 1;
          F9;
+      end;
+      declare
+         procedure F10;
+         pragma Import (Ada, F10, "system__file_io__finalize_body");
+      begin
+         E109 := E109 - 1;
+         F10;
       end;
       declare
          procedure Reraise_Library_Exception_If_Any;
@@ -244,48 +253,53 @@ package body ada_main is
       E037 := E037 + 1;
       E079 := E079 + 1;
       Ada.Numerics'Elab_Spec;
-      E131 := E131 + 1;
+      E135 := E135 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
       E097 := E097 + 1;
       Ada.Streams'Elab_Spec;
-      E107 := E107 + 1;
+      E105 := E105 + 1;
       System.File_Control_Block'Elab_Spec;
-      E115 := E115 + 1;
+      E113 := E113 + 1;
       System.Finalization_Root'Elab_Spec;
-      E114 := E114 + 1;
-      Ada.Finalization'Elab_Spec;
       E112 := E112 + 1;
+      Ada.Finalization'Elab_Spec;
+      E110 := E110 + 1;
       System.File_Io'Elab_Body;
-      E111 := E111 + 1;
+      E109 := E109 + 1;
       System.Storage_Pools'Elab_Spec;
-      E122 := E122 + 1;
+      E151 := E151 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E118 := E118 + 1;
+      E149 := E149 + 1;
       System.Storage_Pools.Subpools'Elab_Spec;
-      E151 := E151 + 1;
+      E157 := E157 + 1;
       Ada.Calendar'Elab_Spec;
       Ada.Calendar'Elab_Body;
-      E139 := E139 + 1;
+      E171 := E171 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E105 := E105 + 1;
+      E103 := E103 + 1;
       System.Pool_Global'Elab_Spec;
-      E124 := E124 + 1;
+      E153 := E153 + 1;
       System.Random_Seed'Elab_Body;
-      E137 := E137 + 1;
+      E169 := E169 + 1;
       measuredeviceobserver'elab_spec;
-      E116 := E116 + 1;
+      E147 := E147 + 1;
       ADM'ELAB_SPEC;
       ADM'ELAB_BODY;
-      E103 := E103 + 1;
+      E115 := E115 + 1;
+      Measuredevicesvector'Elab_Spec;
+      E178 := E178 + 1;
       measuredevice'elab_spec;
       measuredevice'elab_body;
-      E145 := E145 + 1;
+      E177 := E177 + 1;
+      Externaladm'Elab_Spec;
+      Externaladm'Elab_Body;
+      E163 := E163 + 1;
       Pressuresensor'Elab_Spec;
       Pressuresensor'Elab_Body;
-      E130 := E130 + 1;
+      E180 := E180 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -321,13 +335,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /home/catalanl/Bureau/GNAT/TP2/obj/measuredeviceobserver.o
-   --   /home/catalanl/Bureau/GNAT/TP2/obj/adm.o
-   --   /home/catalanl/Bureau/GNAT/TP2/obj/measuredevice.o
-   --   /home/catalanl/Bureau/GNAT/TP2/obj/pressuresensor.o
-   --   /home/catalanl/Bureau/GNAT/TP2/obj/main.o
-   --   -L/home/catalanl/Bureau/GNAT/TP2/obj/
-   --   -L/home/catalanl/Bureau/GNAT/TP2/obj/
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/measuredeviceobserver.o
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/adm.o
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/measuredevicesvector.o
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/measuredevice.o
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/externaladm.o
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/pressuresensor.o
+   --   /home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/main.o
+   --   -L/home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/
+   --   -L/home/catalanl/Bureau/GNAT/TP2/TP2_Ada/obj/
    --   -L/home/catalanl/Bureau/GNAT/2018/lib/gcc/x86_64-pc-linux-gnu/7.3.1/adalib/
    --   -static
    --   -lgnat

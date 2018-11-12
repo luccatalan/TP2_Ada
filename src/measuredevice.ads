@@ -1,4 +1,4 @@
-limited with MeasureDeviceObserver;
+with MeasureDeviceObserver;
 with MeasureDevicesVector;
 
 package MeasureDevice is
@@ -6,6 +6,7 @@ package MeasureDevice is
    type T_MeasureDevice is abstract tagged private;
    
    procedure simulateMeasure(This : in out T_MeasureDevice) is abstract;
+   procedure simulateMeasure(This : in out T_MeasureDevice; status : in Boolean; pressure : in Float); -- Permet de faire les tests
    function getPressure(This : in out T_MeasureDevice) return Float;
    function getStatus(This : in out T_MeasureDevice) return Boolean;
    procedure setPressure(This : in out T_MeasureDevice; Pressure : in Float);

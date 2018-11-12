@@ -1,4 +1,11 @@
 package body MeasureDevice is
+   
+   procedure simulateMeasure(This : in out T_MeasureDevice; status : in Boolean; pressure : in Float) is
+   begin
+      This.setPressure(pressure);
+      This.setStatus(status);
+      This.notify;
+   end;
 
    function getPressure(This : in out T_MeasureDevice) return Float is
    begin
@@ -39,7 +46,7 @@ package body MeasureDevice is
       i : Integer := 0;
    begin
       while i < Integer(This.observers.Length) loop
-         This.observers.Element(i).update(This);
+         This.observers.Element(i).update(This.getId, This.getStatus, This.getPressure);
          i := i + 1;
       end loop;
    end;

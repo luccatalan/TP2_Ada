@@ -8,11 +8,11 @@ package body ExternalADM is
    begin
       p0 := 1013.15;
       Reset(G);
-      This.pression := Random(G) * 2 * p0;
+      This.setPressure(Random(G) * 2.0 * p0);
       if Random(G) < 0.7 then
-         This.status := True;
+         This.setStatus(True);
       else
-         This.status := False;
+         This.setStatus(False);
       end if;
    end simulateMeasure;
                             
